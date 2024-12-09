@@ -152,6 +152,13 @@ echo -n "$CHECKSUM" >> "$OUT_DIR/$FILE_NAME.tar" \
     && echo "  $FILE_NAME.tar" >> "$OUT_DIR/$FILE_NAME.tar" \
     && mv "$OUT_DIR/$FILE_NAME.tar" "$OUT_DIR/$FILE_NAME.tar.md5"
 
+
+echo "Installing pypi"
+sudo sudo pip3 install oauth2client google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
+echo "Uploading tar.md5 files from $OUT_DIR to Google Drive"
+sudo python3 upload.py $OUT_DIR
+
 echo "Deleting tmp dir"
 rm -rf "$TMP_DIR"
 
