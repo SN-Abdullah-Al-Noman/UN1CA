@@ -6,9 +6,7 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from google.auth.transport.requests import Request
 
-
-# Add your drive folder id here. Also upload token.pickle in the root of the repository.
-DRIVE_FOLDER_ID = ""
+DRIVE_FOLDER_ID = "1Nw6qXPCjoVvEsty2O9LY0DbaWOTJUF5h"
 
 def upload_in_drive(file_name, file_path):
     credentials = None
