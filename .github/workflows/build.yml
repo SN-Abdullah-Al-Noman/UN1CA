@@ -70,4 +70,4 @@ jobs:
       - name: Build ROM
         run: |
           source ./buildenv.sh ${{ matrix.target }}
-          ./scripts/make_rom.sh --no-rom-zip --no-rom-tar
+          ./scripts/make_rom.sh
