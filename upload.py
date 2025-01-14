@@ -6,7 +6,7 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from google.auth.transport.requests import Request
 
-DRIVE_FOLDER_ID = "1Nw6qXPCjoVvEsty2O9LY0DbaWOTJUF5h"
+DRIVE_FOLDER_ID = "10EKDmw-L9HCGg5KRGP8BglY8RdTHp9gR"
 
 def upload_in_drive(file_name, file_path):
     credentials = None
